@@ -4,11 +4,23 @@
 
 @section('dashboard-content')
 <div class="space-y-6">
-    <!-- Nadpis s navigací -->
+        <!-- Nadpis s navigací -->
     <div class="flex justify-between items-center">
-        <div>
-            <h1 class="text-2xl font-bold text-gray-900 dark:text-white">{{ $company->name }}</h1>
-            <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Detail firmy</p>
+        <div class="flex items-center space-x-4">
+            <!-- Ikona kategorie -->
+            <div class="w-16 h-16 {{ $company->getCategoryBgColor() }} rounded-xl flex items-center justify-center shadow-md">
+                <span class="text-3xl">{{ $company->getCategoryIcon() }}</span>
+            </div>
+            <!-- Informace o firmě -->
+            <div>
+                <h1 class="text-2xl font-bold text-gray-900 dark:text-white">{{ $company->name }}</h1>
+                <div class="flex items-center space-x-3 mt-2">
+                    <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium {{ $company->getCategoryBgColor() }} {{ $company->getCategoryColor() }}">
+                        {{ $company->getCategoryIcon() }} {{ $company->getCategoryName() }}
+                    </span>
+                    <span class="text-sm text-gray-600 dark:text-gray-400">Detail firmy</span>
+                </div>
+            </div>
         </div>
         <div class="flex space-x-3">
             <a href="{{ route('companies.index') }}" class="btn-secondary">
@@ -21,6 +33,7 @@
             @endcan
         </div>
     </div>
+
 
     <!-- Informace o firmě -->
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">

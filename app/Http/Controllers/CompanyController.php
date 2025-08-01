@@ -77,10 +77,13 @@ class CompanyController extends Controller
             'address' => 'nullable|string',
             'website' => 'nullable|url|max:255',
             'industry' => 'nullable|string|max:255',
+            'category' => 'required|in:it,manufacturing,services,finance,healthcare,retail,education,food,transport,other',
             'status' => 'required|in:active,inactive,prospect',
             'value' => 'nullable|numeric|min:0',
             'notes' => 'nullable|string',
         ]);
+
+
 
         $company->update($validated);
 
