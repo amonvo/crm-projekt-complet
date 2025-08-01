@@ -1,65 +1,78 @@
-<<<<<<< HEAD
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🏢 CRM System - Complete Enterprise Solution
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+[![Laravel](https://img.shields.io/badge/Laravel-12.21.0-red.svg)](https://laravel.com)
+[![PHP](https://img.shields.io/badge/PHP-8.2+-blue.svg)](https://php.net)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen.svg)]()
 
-## About Laravel
+Moderní a kompletní CRM systém vytvořený v Laravel 12 s pokročilými funkcionalitami pro správu firem, kontaktů a business analytics. Systém nabízí enterprise-level funkce s profesionálním UI/UX designem.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+![CRM Dashboard Preview](https://via.placeholder.com/800x400/3b82f6/ffffff?text=CRM+Dashboard+Preview)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## ✨ Klíčové funkce
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 📊 **Analytics & Dashboard**
+- **Interaktivní grafy** s Chart.js (4 typy grafů)
+- **KPI metriky** a conversion tracking
+- **Filtrování podle období** s export do CSV
+- **Real-time analytics** s growth tracking
 
-## Learning Laravel
+### 🔍 **Pokročilé vyhledávání**
+- **Live search** s autocomplete návrhy
+- **Pokročilé filtry** (kategorie, status, hodnota, datum)
+- **Bulk operace** (změna statusu, export, mazání)
+- **Infinite scroll** s skeleton loading
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### 🎨 **Multi-Theme systém**
+- **5 barevných témat** s okamžitým přepínáním
+- **CSS variables** pro dynamické theming
+- **Uživatelské preference** uložené v databázi
+- **Dark mode** kompatibilita
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### 🏢 **Správa firem**
+- **10 kategorií firem** s unikátními ikonami
+- **Vizuální category picker** s grid layoutem
+- **Barevné kódování** podle kategorií
+- **Pokročilé filtrování a řazení**
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 👥 **Správa kontaktů**
+- **Vazby na firmy** s hlavními kontakty
+- **Detailní informace** o pozicích a rolích
+- **Pokročilé vyhledávání** napříč kontakty
 
-## Laravel Sponsors
+### 🔐 **Uživatelská správa**
+- **Role-based permissions** se Spatie/Permission
+- **Bezpečné autentizace** s CSRF ochranou
+- **Theme preferences** pro každého uživatele
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 🚀 Technologie
 
-### Premium Partners
+### Backend
+- **Laravel 12.21.0** - PHP framework
+- **PHP 8.2+** - Programming language
+- **SQLite** - Database (production-ready)
+- **Spatie/Permission** - Role management
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### Frontend
+- **Tailwind CSS** - Utility-first CSS framework
+- **Alpine.js** - Lightweight JS framework
+- **Chart.js** - Data visualization
+- **Vite** - Build tool
 
-## Contributing
+### Features
+- **Responsive design** - Mobile-first approach
+- **Progressive enhancement** - Works without JavaScript
+- **Accessibility** - WCAG compliant
+- **Performance optimized** - Fast loading times
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 📦 Instalace
 
-## Code of Conduct
+### Požadavky
+- PHP 8.2 nebo vyšší
+- Composer
+- Node.js 18+ a NPM
+- SQLite (nebo MySQL/PostgreSQL)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Postup instalace
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-=======
-# crm-projekt-complet
->>>>>>> b811a35bea41c7bf2f40efb9d86dce2740cdad07
+1. **Klonování repozitáře**
