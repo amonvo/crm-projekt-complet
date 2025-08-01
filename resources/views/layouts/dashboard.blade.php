@@ -20,7 +20,7 @@
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between h-16">
                 <!-- Logo a navigace -->
-                <div class="flex items-center">
+                <div class="flex items-center flex-1">
                     <h1 class="text-xl font-bold text-gray-900 dark:text-white">
                         <span class="text-primary">CRM</span> System
                     </h1>
@@ -37,6 +37,11 @@
                            class="text-gray-900 dark:text-white hover:text-primary px-3 py-2 rounded-md transition-all duration-200 {{ request()->routeIs('contacts.*') ? 'text-primary font-semibold' : '' }}">
                             👥 Kontakty
                         </a>
+                    </div>
+                    
+                    <!-- Live Search -->
+                    <div class="ml-8 flex-1 max-w-lg">
+                        @include('components.live-search')
                     </div>
                 </div>
                 

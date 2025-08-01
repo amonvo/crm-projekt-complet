@@ -4,6 +4,8 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\SearchController;
+use App\Http\Controllers\ThemeController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -29,6 +31,12 @@ Route::middleware('auth')->group(function () {
     Route::resource('contacts', ContactController::class);
     
     // Theme management routes
-    Route::post('/theme/update', [App\Http\Controllers\ThemeController::class, 'update'])->name('theme.update');
-    Route::get('/theme/current', [App\Http\Controllers\ThemeController::class, 'current'])->name('theme.current');
+    Route::post('/theme/update', [ThemeController::class, 'update'])->name('theme.update');
+    Route::get('/theme/current', [ThemeController::class, 'current'])->name('theme.current');
+    
+    // Advanced Search API routes
+    Route::get('/api/search/live', [SearchController::class, 'liveSearch'])->name('api.search.live');
+    Route::get('/api/search/suggestions', [SearchController::class, 'suggestions'])->name('api.search.suggestions');
+    Route::get('/api/companies/filter', [SearchController::class, 'filterCompanies'])->name('api.companies.filter');
+    Route::post('/api/bulk-operation', [SearchController::class, 'bulkOperation'])->name('api.bulk.operation');
 });
