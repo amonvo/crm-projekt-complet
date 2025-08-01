@@ -1,78 +1,45 @@
-# 🏢 CRM System - Complete Enterprise Solution
+# 🏢 CRM System
 
-[![Laravel](https://img.shields.io/badge/Laravel-12.21.0-red.svg)](https://laravel.com)
-[![PHP](https://img.shields.io/badge/PHP-8.2+-blue.svg)](https://php.net)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen.svg)]()
+**CRM System** je moderní webová aplikace pro správu firem a kontaktů s pokročilými business funkcemi.
 
-Moderní a kompletní CRM systém vytvořený v Laravel 12 s pokročilými funkcionalitami pro správu firem, kontaktů a business analytics. Systém nabízí enterprise-level funkce s profesionálním UI/UX designem.
+## Co aplikace dělá
 
-![CRM Dashboard Preview](https://via.placeholder.com/800x400/3b82f6/ffffff?text=CRM+Dashboard+Preview)
+### 📊 Analytics Dashboard
+- Interaktivní grafy s Chart.js (donut, bar, polar, line charts)
+- KPI metriky a statistiky výkonu
+- Filtrování podle období a export dat
 
-## ✨ Klíčové funkce
+### 🏢 Správa firem
+- 10 kategorií firem s unikátními ikonami (IT, Výroba, Služby, Finance, atd.)
+- Vizuální category picker
+- Pokročilé informace (hodnota obchodů, status, kontakty)
 
-### 📊 **Analytics & Dashboard**
-- **Interaktivní grafy** s Chart.js (4 typy grafů)
-- **KPI metriky** a conversion tracking
-- **Filtrování podle období** s export do CSV
-- **Real-time analytics** s growth tracking
+### 👥 Správa kontaktů
+- Vazby kontaktů na firmy
+- Hlavní kontakty a pozice
+- Detailní contact management
 
-### 🔍 **Pokročilé vyhledávání**
-- **Live search** s autocomplete návrhy
-- **Pokročilé filtry** (kategorie, status, hodnota, datum)
-- **Bulk operace** (změna statusu, export, mazání)
-- **Infinite scroll** s skeleton loading
+### 🔍 Live Search
+- Okamžité vyhledávání bez refresh stránky
+- Autocomplete návrhy
+- Hledání napříč firmami i kontakty
 
-### 🎨 **Multi-Theme systém**
-- **5 barevných témat** s okamžitým přepínáním
-- **CSS variables** pro dynamické theming
-- **Uživatelské preference** uložené v databázi
-- **Dark mode** kompatibilita
+### 🎨 Multi-Theme systém
+- 5 barevných témat (Modrá, Zelená, Fialová, Oranžová, Červená)
+- Dark/Light mode
+- Uživatelské preference
 
-### 🏢 **Správa firem**
-- **10 kategorií firem** s unikátními ikonami
-- **Vizuální category picker** s grid layoutem
-- **Barevné kódování** podle kategorií
-- **Pokročilé filtrování a řazení**
+### ⚡ Pokročilé funkce
+- Bulk operace (hromadné změny, export, mazání)
+- Pokročilé filtry (kategorie, status, hodnota, datum)
+- Role-based oprávnění uživatelů
+- Responzivní design pro mobily
 
-### 👥 **Správa kontaktů**
-- **Vazby na firmy** s hlavními kontakty
-- **Detailní informace** o pozicích a rolích
-- **Pokročilé vyhledávání** napříč kontakty
+## Technologie
 
-### 🔐 **Uživatelská správa**
-- **Role-based permissions** se Spatie/Permission
-- **Bezpečné autentizace** s CSRF ochranou
-- **Theme preferences** pro každého uživatele
+**Backend:** Laravel 12 + PHP 8.2 + SQLite  
+**Frontend:** Tailwind CSS + Alpine.js + Chart.js
 
-## 🚀 Technologie
+---
 
-### Backend
-- **Laravel 12.21.0** - PHP framework
-- **PHP 8.2+** - Programming language
-- **SQLite** - Database (production-ready)
-- **Spatie/Permission** - Role management
-
-### Frontend
-- **Tailwind CSS** - Utility-first CSS framework
-- **Alpine.js** - Lightweight JS framework
-- **Chart.js** - Data visualization
-- **Vite** - Build tool
-
-### Features
-- **Responsive design** - Mobile-first approach
-- **Progressive enhancement** - Works without JavaScript
-- **Accessibility** - WCAG compliant
-- **Performance optimized** - Fast loading times
-
-## 📦 Instalace
-
-### Požadavky
-- PHP 8.2 nebo vyšší
-- Composer
-- Node.js 18+ a NPM
-- SQLite (nebo MySQL/PostgreSQL)
-
-### Postup instalace
-
-1. **Klonování repozitáře**
+*Moderní CRM řešení pro efektivní správu obchodních vztahů*
